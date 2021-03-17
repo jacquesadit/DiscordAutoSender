@@ -13,7 +13,7 @@ rem ########################################################
 
 set DISCORD_SESSION_KEY=
 set CHANNEL_ID=623196575191007232
-set MESSAGE=This is automated message sent using a tool found at https://github.com/jacquesadit/DiscordAutoSender
+set MESSAGE=This automated message was sent using a special script found here: https://github.com/jacquesadit/DiscordAutoSender
 set TIMEOUT=10860
 
 :LOOP
@@ -28,5 +28,6 @@ curl "https://discord.com/api/v8/channels/%CHANNEL_ID%/messages" ^
 echo.
 timeout /t %TIMEOUT% /nobreak
 echo.
+
 
 goto LOOP
